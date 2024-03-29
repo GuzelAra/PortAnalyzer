@@ -1,0 +1,38 @@
+table.table-sm th, table.table-sm td {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.header{
+				position:sticky;
+				top: 0 ;
+}
+
+.rainbow {
+  /*font-family:arial black;
+   font-size: 12px; */
+  background-image: 
+    linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red); 
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+  animation: rainbow-animation 3500s linear infinite;
+}
+
+@keyframes rainbow-animation {
+    to {
+        background-position: 4500vh;
+    }
+}
+
+
+
+.change-color {
+  animation: color-change 2s  infinite;
+  cubic-bezier(0.93, 0.33, 0.78, 1.68);
+}
+
+@keyframes color-change {
+  0% { color: #3396ff; }
+  50% { color: #6cbcc9; }
+  100% { color: #e75f6b; }
+}
